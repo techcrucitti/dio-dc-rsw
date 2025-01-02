@@ -24,7 +24,7 @@ for file_name in encrypted_files:
     os.remove(file_name)
 
     # Criar o nome do arquivo original
-    new_file_name = file_name.replace('.sequestrado', '.xyz')
+    new_file_name = file_name.replace('.xyz.sequestrado', '.xyz')
 
     # Criar o arquivo descriptografado
     with open(new_file_name, "wb") as new_file:
